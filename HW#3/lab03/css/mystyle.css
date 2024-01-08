@@ -1,0 +1,181 @@
+.bodybg{
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: arial;
+    background-color: rgb(red, green, blue);
+
+}
+
+h1 {
+    color: rgb(red, green, blue);
+}
+
+.main-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    margin: 30px;
+}
+
+.oval {
+    border-radius: 50px;
+}
+
+.text {
+    align-items: center;
+    font-size: large;
+}
+
+.cat {
+    margin-right: 12%;
+    width:"100px";
+    height:"100px";
+}
+
+.image {
+    width: 100%   
+}
+
+.push {
+    color: black;
+    background: lightgrey;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cool-push {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: #c7c5c5;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.cool-push:hover,
+.cool-push:active {
+    background-color: black;
+}
+
+.top {
+    padding: 10px;
+    margin-right: 40px;
+}
+
+.changecolor {
+    color:#09619c;
+    font-weight: bold;
+}
+
+.changecolor:hover {
+    color: #77521a;
+}
+
+.main-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.timetable {
+    color: black;
+    background: lightgray;
+    border-radius: 20px; 
+    padding: 1px; 
+    margin: auto;
+}
+
+.table {
+    text-align:center;
+}
+
+.boardtime {
+    background-color: rgb(59, 59, 59); 
+    color: white; 
+    font-size: small;
+}
+
+.time {
+    padding: 20px;
+}
+
+.day {
+    padding: 50px; 
+    background-color: #a0a0a0; 
+    color: white; 
+    display: block; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.empty {
+    padding: 50px;
+}
+
+.learn {
+    background-color:#c1d2f9 ;
+    text-align: center;
+}
+
+.containerMain{
+    min-width: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.xob {
+    padding: 20px;
+    margin: 30px;
+    margin-bottom: 10px;
+}
+
+.cool-button{
+    font-size: 1.7rem;
+    padding: 30px 90px;
+    background: none;
+    border: black solid 2px;
+    color: black;
+    font-weight:700;
+    letter-spacing: 2px;
+    transition:.4s;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    border-radius: 30px;
+}
+
+.cool-button::after{
+    content:"";
+    width: 0;
+    height: 100%;
+    background: black;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition:.4s;
+    position: absolute;
+}
+
+.cool-button:hover{
+    color: #ffffff;
+}
+
+.cool-button:hover::after{
+    width: 100%;
+}
