@@ -1,22 +1,22 @@
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin: 20px;
-    background-color: #f8f8f8;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* กำหนดรูปแบบอักษรใน body เป็น "Segoe UI" หรือถ้าไม่สามารถ*/
+    text-align: center; /*จัดตำแหน่งข้อความใน body เป็นส่วนกลาง*/
+    margin: 20px; /*กำหนดขอบระหว่างขอบของ body เป็น 20px*/
+    background-color: #f8f8f8; /*กำหนดสีพื้นหลังของ body เป็น #f8f8f8*/
     }
     h1 {
-    color: #333;
-    font-size: 24px;
-    background-color: #00b7ff;
-    padding: 15px;
-    border-radius: 5px;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333; /*กำหนดสีของข้อความเป็น #333*/
+    font-size: 24px; /*กำหนดขนาดตัวอักษรเป็น 24px*/
+    background-color: #00b7ff; /*กำหนดสีพื้นหลังของ h1 เป็น #00b7ff*/
+    padding: 15px; /* เพิ่มพื้นที่ padding 15px ทั้งสี่ด้านของ h1*/
+    border-radius: 5px; /*กำหนดรูปร่างของขอบเป็นรูปวงกลม 5px*/
+    color: rgb(0, 0, 0); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /*เพิ่มเงาข้อความด้วย*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาที่ส่วนล่างของ h1 ด้วย*/
     }
     ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /*กำหนดไม่แสดงสัญลักษณ์รายการ*/
+    padding: 0; /*กำหนดพื้นที่ padding ของ ul เป็น 0*/
     }
     li {
     background-color: #fff;
@@ -35,12 +35,12 @@ body {
     text-decoration: line-through;
     }
     input[type="text"] {
-    width: 60%;
+    width: 60%; /*กำหนดความกว้างของช่องป้อนข้อมูลเป็น 60%*/
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-right: 10px;
-    font-size: 16px;
+    border-radius: 8px; /*กำหนดรูปร่างของขอบช่องป้อนข้อมูลเป็นรูปวงกลม 8px*/
+    margin-right: 10px; /*กำหนดระยะห่างด้านขวาของช่องป้อนข้อมูล*/
+    font-size: 16px; /*กำหนดขนาดตัวอักษรของช่องป้อนข้อมูล*/
     }
     button {
     padding: 12px 24px;

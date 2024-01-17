@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // todoList เก็บข้อมูลรายการ Todo
     const todoList = document.getElementById("todo-list");
+    // todoInput เก็บข้อมูลที่ผู้ใช้ป้อนเพื่อเพิ่ม Todo
     const todoInput = document.getElementById("todo-input");
+    // addButton ปุ่มที่เมื่อคลิกจะเพิ่ม Todo ใหม่
     const addButton = document.getElementById("add-button");
     let todos = [];
     function addTodo() {
@@ -17,14 +20,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     }
     // ลบรายการ Todo
+    // สร้างฟังก์ชัน  deleteTodo
+    // ใช้เพื่อลบรายการ Todo ที่ระบุด้วย index จาก array todos
     function deleteTodo(index) {
     todos.splice(index, 1);
     renderTodoList();
+    // หลังจากนั้นจะเรียก renderTodoList เพื่อแสดงรายการ Todo ทั้งหมด
     }
     // ตรวจสอบ/ยกเลิกการเสร็จสิ้นรายการ Todo
+    // สร้างฟังก์ชัน toggleComplete
+    // เปลี่ยนสถานะการเสร็จสิ้น (completed) ของรายการ Todo ที่ระบุด้วย index
     function toggleComplete(index) {
-    todos[index].completed = !todos[index].completed;
-    renderTodoList();
+        todos[index].completed = !todos[index].completed;
+        renderTodoList();
+    // หลังจากนั้นจะเรียก renderTodoList เพื่อแสดงรายการ Todo ทั้งหมด
     }
     function renderTodoList() {
     console.log(todos);
