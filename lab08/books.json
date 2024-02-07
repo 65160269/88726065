@@ -1,0 +1,36 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "name": "HTML",
+            "price": "599$",
+            "author1": "Tanaka",
+            "author2": "Tomoyo",
+            "author3": "Tsumuki"
+        },
+        {
+            "id": 2,
+            "name": "CSS",
+            "price": "250$",
+            "author1": "Nut",
+            "author2": "Poom",
+            "author3": "Bew"
+        },
+        {
+            "id": 3,
+            "name": "Programming",
+            "price": "599$",
+            "author1": "Ada Lovelace",
+            "author2": "Charles Babbage",
+            "author3": ""
+        },
+        {
+            "id": 4,
+            "name": "Business",
+            "price": "2999$",
+            "author1": "Steve Jobs",
+            "author2": "Elon Musk",
+            "author3": "Mark Zuckerberg"
+        }
+    ]
+}
