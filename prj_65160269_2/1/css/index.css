@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #D2DBDD;
+}
+
+.Travel{
+    background-color: transparent;
+}
+
+.menu {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+}
+
+.menu a {
+    margin-right: 20px;
+    float: left;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    background-color: transparent;
+} 
+form a,i {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+    .top {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+    form {
+        width: 100%;
+    }
+
+    form input[type="text"] {
+        width: 0;
+    }
+}
+.box {
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    padding-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.219);
+}
+.box:hover input {
+    width: 400px;
+}
+.box input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.box a .fa {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+#nothing-alert {
+    display: none;
+    width: 100%;
+    margin: 50px auto;
+    font-size: 400%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 400px;
+}
+
+.main {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.cards {
+    display: flex;
+    padding: 40px;
+    width: 100%; 
+    height: 100%; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card--1 .card__img, .card--1 .card__img--hover {
+    background-image: url(/1/images/Bangkok.jpg);
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url(/1/images/japan.jpg);
+}
+
+.card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url(/1/images/London.jpg);
+}
+
+.card--4 .card__img, .card--4 .card__img--hover {
+    background-image: url(/1/images/Paris.jpg);
+}
+
+.card--5 .card__img, .card--5 .card__img--hover {
+    background-image: url(/1/images/Switzerland.jpg);
+}
+
+.card--6 .card__img, .card--6 .card__img--hover {
+    background-image: url(/1/images/Austria.jpg);
+}
+
+.card--7 .card__img, .card--7 .card__img--hover {
+    background-image: url(/1/images/Canada.jpg);
+}
+
+.card--8 .card__img, .card--8 .card__img--hover {
+    background-image: url(/1/images/New\ Zealand.jpg);
+}
+
+.card--9 .card__img, .card--9 .card__img--hover {
+    background-image: url(/1/images/Ireland.jpg);
+}
+.card__img {
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    top: 0;
+  
+}
+.card {
+  margin: 60px;
+  margin-top: 100px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: calc(25%);
+  width: 25vw;
+  height: auto;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+  z-index: 0;
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card__by {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #868686;
+}
+
+.card__author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
+}
+
+.card:hover .card__img--hover {
+    height: 100%;
+    /* opacity: 0.9; */
+}
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+    color: transparent;
+}
+
+
+.card:hover .card__info-hover {
+    opacity: 1;
+}
